@@ -87,10 +87,78 @@ select{padding:12px 38px 12px 14px;border:1px solid var(--line);border-radius:12
 // Каждая фотография — отдельный объект в массиве photos.
 // ФОТОГРАФИИ ДОБАВЛЯЙТЕ В ЭТОТ МАССИВ.
 // Файлы изображений храните в папке photos/ рядом с index.html.
-const photos = [
-  // Пример:
-  // { id: 1, title: "Большая перемена", cat: "Конкурсы и достижения", date: "2026-11-25", desc: "Участники конкурса", url: "photos/konkurs1.jpg" },
+  const photos = [
+  // КОНКУРСЫ — 3 фотографии
+  {
+    id: 1,
+    title: "Конкурс 1",
+    cat: "Конкурсы и достижения",
+    date: "2026-11-25",
+    desc: "Фотография с конкурса",
+    url: "photos/конкурс1.jpg"
+  },
+  {
+    id: 2,
+    title: "Конкурс 2",
+    cat: "Конкурсы и достижения",
+    date: "2026-11-25",
+    desc: "Участники конкурса",
+    url: "photos/конкурс2.jpg"
+  },
+  {
+    id: 3,
+    title: "Конкурс 3",
+    cat: "Конкурсы и достижения",
+    date: "2026-11-25",
+    desc: "Конкурсные достижения студентов",
+    url: "photos/конкурс3.jpg"
+  },
+
+  // МЕРОПРИЯТИЯ — 2 фотографии
+  {
+    id: 4,
+    title: "Мероприятие 1",
+    cat: "Мероприятия",
+    date: "2026-11-25",
+    desc: "Фотография с мероприятия колледжа",
+    url: "photos/мп1.jpg"
+  },
+  {
+    id: 5,
+    title: "Мероприятие 2",
+    cat: "Мероприятия",
+    date: "2026-11-25",
+    desc: "Участники мероприятия",
+    url: "photos/мп2.jpg"
+  },
+
+  // УЧЁБА — 3 фотографии
+  {
+    id: 6,
+    title: "Учебный процесс 1",
+    cat: "Учебный процесс",
+    date: "2026-11-25",
+    desc: "Студенты на занятиях",
+    url: "photos/учеба1.jpg"
+  },
+  {
+    id: 7,
+    title: "Учебный процесс 2",
+    cat: "Учебный процесс",
+    date: "2026-11-25",
+    desc: "Практическое занятие",
+    url: "photos/учеба2.jpg"
+  },
+  {
+    id: 8,
+    title: "Учебный процесс 3",
+    cat: "Учебный процесс",
+    date: "2026-11-25",
+    desc: "Обучение в колледже",
+    url: "photos/учеьа3.jpg"
+  }
 ];
+
 let activeCat = "Все";
 const grid=document.getElementById("galleryGrid"), search=document.getElementById("search"), sort=document.getElementById("sort");
 function render(){
